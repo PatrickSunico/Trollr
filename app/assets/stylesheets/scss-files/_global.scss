@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Actonia";
+  src: font-url('/assets/Actonia');
+}
+
+h1 {
+  font-family: 'Actonia', sans-serif;
+  font-size: 72px;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+
+}
+
+body {
+  // background: #E6DADA; /* fallback for old browsers */
+  background: -moz-gradient(to left, #E6DADA , #274046);
+  //
+  background: -webkit-linear-gradient(to left, #E6DADA , #274046);
+  // /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #E6DADA , #274046); /* W3C, IE 10+/ Edge, Firefox */
+}

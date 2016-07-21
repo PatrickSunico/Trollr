@@ -1,0 +1,13 @@
+<h1>Welcome to Trollr </h1>
+<!-- send values of user to action create /users as defined on our routes -->
+<!-- controller/route -->
+<!-- root/route -->
+<%= form_for(:user, url: '/users') do |f| %>
+  Username: <%= f.text_field(:username)%>
+  Email: <%=f.text_field(:email)%>
+  <!-- With has_secured_password :password is a hidden attribute which can be access only from within the development environment-->
+  Password: <%= f.password_field(:password) %>
+  <!-- Again a Built in with has_secured_password -->
+  Confirm Password <%=f.password_field(:password_confirmation)%>
+  <%= f.submit("Submit") %>
+<% end %>
