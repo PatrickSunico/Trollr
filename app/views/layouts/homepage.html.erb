@@ -10,14 +10,14 @@
   </style>
 </head>
   <body>
-
-  <!-- if flash[:notice] is !not blank display a notice -->
-  <div class="container">
-    <div class="form-wrapper">
-      <%= yield %>
+    <div class="container">
+      <div class="form-wrapper">
+        <h1><%= @page_title = "Trollr"%></h1>
+        <div class="header-title">
+          <p>Login or Signup to View a "Secret Page"</p>
+        </div>
+        <%= yield %>
+      </div>
     </div>
-  </div>
-
-
   </body>
 </html>

@@ -1,20 +1,14 @@
 <!-- send values of user to action create /users as defined on our routes -->
 <!-- controller/route -->
 <!-- root/route -->
-
-  <!-- <div class="form-wrapper"> -->
-    <div class="header-title">
-      <p>Login or Signup to View a "Secret Page"</p>
+  <% if !flash[:notice].blank? %>
+    <div class="notice">
+      <%= flash[:notice] %>
     </div>
-    <% if !flash[:notice].blank? %>
-      <div class="notice">
-        <%= flash[:notice] %>
-      </div>
-    <% end %>
+  <% end %>
 
-      <%= form_for(:user, url: '/users') do |f| %>
-        <%= render(:partial => 'users/partials/signup', :locals => {:f => f}) %>
-      <% end %>
+  <%= form_for(:user, url: '/users') do |f| %>
+    <%= render(:partial => 'users/partials/signup', :locals => {:f => f}) %>
+  <% end %>
 
-      <%= link_to('Already an existing user?', {controller: 'sessions', action: 'new'}, class: 'link-to-login')%>
-    <!-- </div> -->
+  <%= link_to('Already an existing user?', {controller: 'sessions', action: 'new'}, class: 'link-to-login')%>

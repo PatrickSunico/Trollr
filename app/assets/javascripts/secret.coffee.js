@@ -4,6 +4,6 @@
 
 $(document).ready(function () {
   if ($("#log-out-message").is(":hidden")) {
-    $("#log-out-message").delay(5000).slideDown();
+    $("#log-out-message").delay(10000).slideDown();
    }
 });

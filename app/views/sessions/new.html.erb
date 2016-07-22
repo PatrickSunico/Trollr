@@ -1,11 +1,16 @@
-
-<!-- <div class="form-wrapper"> -->
+<% if !flash[:notice].blank? %>
+  <div class="notice">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
 
   <%= form_tag(:action => 'create') do %>
-    <!-- Email: <%= text_field_tag(:email)%> -->
-    Username <%= text_field_tag(:username)%>
-    Password <%= password_field_tag(:password) %>
-    <%= submit_tag("Submit")%>
+     <%=label(:username, "Username") %>
+     <%= text_field_tag(:username)%>
+
+     <%=label(:password, "Password") %>
+     <%= password_field_tag(:password) %>
+    <%= submit_tag("Login")%>
   <% end %>
 
-<!-- </div> -->
+  <%= link_to('Wanna create a new account?', '/signup', class: 'link-to-signup')%>

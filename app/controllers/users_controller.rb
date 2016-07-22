@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     user = User.new(user_params)
     if user.save
       session[:user_id] = user.id # store user.id to our session cookie
-      redirect_to '/'
+      redirect_to '/index'
     else
       if User.exists?(:email => user.email)
         flash[:notice] = "Email Already Exists"
