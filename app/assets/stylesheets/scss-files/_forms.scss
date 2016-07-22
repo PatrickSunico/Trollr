@@ -16,6 +16,11 @@
     transition: all .2s ease-out;
     padding: 40px 35px;
 
+    // Flash notice
+    .notice {
+      color:white;
+    }
+
     h1 {
       text-align: center;
       color: white;
@@ -24,16 +29,21 @@
       text-align: center;
     }
 
-    input[type=text] {
+    input[type=text],input[type=password] {
       width: 100%;
       padding: 12px 20px;
       margin: 8px 0;
       display: inline-block;
       border: 1px solid #ccc;
-      -webkit-transition: 0.5s;
-      transition: 0.5s;
       box-sizing: border-box;
+
+      -webkit-transition: all 0.30s ease-in-out;
+      -moz-transition: all 0.30s ease-in-out;
+      -ms-transition: all 0.30s ease-in-out;
+      -o-transition: all 0.30s ease-in-out;
+      outline: none;
     }
+
     input:-webkit-autofill,
     input:-webkit-autofill:hover,
     input:-webkit-autofill:focus,
@@ -41,23 +51,35 @@
         transition: background-color 5000s ease-in-out 0s;
     }
 
+    input[type=password]:focus,input[type=text]:focus {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+      border: 1px solid rgba(0, 0, 0, 1);
+    }
+
 
     input[type=submit] {
-      background-color: #4CAF50;
+      background-color: rgba(142,142,142,1);
       color: white;
       padding: 14px 20px;
       margin: 8px 0;
       border: none;
       cursor: pointer;
       width: 100%;
+      -webkit-transition: all 0.30s ease-in-out;
+      -moz-transition: all 0.30s ease-in-out;
+      -ms-transition: all 0.30s ease-in-out;
+      -o-transition: all 0.30s ease-in-out;
+      // outline: none;
+
+      &:active {
+        outline: none;
+      }
+      &:hover {
+        background-color: rgba(124, 119, 119, 1);
+        outline: none;
+      }
     }
-    input[type=password]{
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-    }
+
     a {
         color: white;
         text-decoration: none;
