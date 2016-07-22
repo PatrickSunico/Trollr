@@ -2,9 +2,7 @@
 <!-- controller/route -->
 <!-- root/route -->
 
-
-  <div class="form-wrapper">
-    <h1>Trollr</h1>
+  <!-- <div class="form-wrapper"> -->
     <div class="header-title">
       <p>Login or Signup to View a "Secret Page"</p>
     </div>
@@ -13,20 +11,10 @@
         <%= flash[:notice] %>
       </div>
     <% end %>
+
       <%= form_for(:user, url: '/users') do |f| %>
-        <%=f.label(:username, "Username") %>
-        <%= f.text_field(:username)%> <br>
-
-        <%= f.label(:email, "Email")%>
-        <%=f.text_field(:email)%> <br>
-
-        <%= f.label(:password, "Password")%>
-        <%= f.password_field(:password) %> <br>
-
-        <%= f.label(:password_confirmation, "Confirm Password") %>
-        <%=f.password_field(:password_confirmation)%> <br>
-
-        <%= f.submit("Sign Up") %>
+        <%= render(:partial => 'users/partials/signup', :locals => {:f => f}) %>
       <% end %>
+
       <%= link_to('Already an existing user?', {controller: 'sessions', action: 'new'}, class: 'link-to-login')%>
-    </div>
+    <!-- </div> -->
