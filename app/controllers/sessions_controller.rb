@@ -31,7 +31,7 @@ class SessionsController < ApplicationController
     # flush out all session id's on user that's logs out
     session[:user_id] = nil
     session[:username] = nil
-    flash[:notice] = "You have logged out"
+    flash[:notice] = "You have logged out, Wasn't it fun"
     redirect_to '/login'
   end
 end
