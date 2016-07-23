@@ -5,19 +5,23 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <style>
-
-  </style>
 </head>
-  <body>
+  <body class="preload">
     <div class="container">
       <div class="form-wrapper">
-        <h1><%= @page_title = "Trollr"%></h1>
-        <div class="header-title">
-          <p>Login or Signup to View a "Secret Page"</p>
+        <div class="animated fadeInUp preload">
+          <h1><%= @page_title = "Trollr"%></h1>
+          <div class="header-title">
+            <p>Login or Signup to View a "Secret Page"</p>
+          </div>
+          <%= yield %>
         </div>
-        <%= yield %>
       </div>
     </div>
+    <script>
+      $(window).load(function() {
+        $("body").removeClass("preload");
+      });
+    </script>
   </body>
 </html>
