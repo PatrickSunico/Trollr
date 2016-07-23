@@ -13,11 +13,12 @@ class UsersController < ApplicationController
       redirect_to '/index'
     else
       if User.exists?(:email => user.email)
-        flash[:notice] = "Email Already Exists"
-        render 'new'
+        user
+        flash[:alert] = "Email Already Exists"
+        redirect_to '/signup'
       else params[:user].present?
-        flash[:notice] = "Please Enter a correct Username or Password"
-        render 'new'
+        flash[:alert] = "Please Enter a correct Username or Password"
+        redirect_to '/signup'
       end
     end
   end

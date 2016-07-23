@@ -56,7 +56,6 @@
       border: 1px solid rgba(0, 0, 0, 1);
     }
 
-
     input[type=submit] {
       background-color: rgba(142,142,142,1);
       color: white;
@@ -91,42 +90,46 @@
   }
 
 
-// Form-Animations
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
+// Alert Animation
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+// mask = container where the animations will render just to add some spacing
+.mask {
+  margin: 20px;
+  height: 40px;
+  width: auto;
+  overflow: visible;
+  z-index:2;
+  .alert-box { // where the actual message will be animated
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    .alert-message,p {
+      text-align: center;
+      padding: 10px;
+      margin: 0;
+      font-size: 1em;
+      font-weight: bold;
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .3);
+      background-color: rgba(48, 48, 48, .3);
+      position: relative;
     }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.fadeInUp {
-    -webkit-animation-name: fadeInUp;
-    -moz-animation-name: fadeInUp;
-    -o-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-}
-
-.animated {
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -ms-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
-}
-
-.preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
+  }
 }

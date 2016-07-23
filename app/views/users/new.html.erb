@@ -1,12 +1,16 @@
 <!-- send values of user to action create /users as defined on our routes -->
 <!-- controller/route -->
 <!-- root/route -->
-
-  <% if !flash[:notice].blank? %>
-    <div class="notice">
-      <%= flash[:notice] %>
+<!-- Signup -->
+<%= flash_alerts() %>
+<!-- <div class="mask">
+  <% if !flash[:alert].blank? %>
+    <div class="alert-box shake">
+      <p class="alert-message"><%= flash[:alert]%></p>
     </div>
   <% end %>
+</div> -->
+
 
   <%= form_for(:user, url: '/users') do |f| %>
     <%= render(:partial => 'users/partials/signup', :locals => {:f => f}) %>

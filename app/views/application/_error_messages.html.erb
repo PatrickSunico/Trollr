@@ -1,0 +1,7 @@
+<div class="mask">
+  <% if !flash[:alert].blank? %>
+    <div class="alert-box shake">
+      <p class="alert-message"><%= flash[:alert]%></p>
+    </div>
+  <% end %>
+</div>

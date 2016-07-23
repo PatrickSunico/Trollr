@@ -1,8 +1,13 @@
-<% if !flash[:notice].blank? %>
-  <div class="notice">
-    <%= flash[:notice] %>
-  </div>
-<% end %>
+<!-- Login -->
+<%= flash_alerts() %>
+<!-- <div class="mask">
+  <% if !flash[:alert].blank? %>
+    <div class="alert-box shake">
+      <p class="alert-message"><%= flash[:alert]%></p>
+    </div>
+  <% end %>
+</div> -->
+
 
   <%= form_tag(:action => 'create') do %>
      <%=label(:username, "Username") %>

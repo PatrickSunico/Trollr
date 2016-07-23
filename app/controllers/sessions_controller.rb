@@ -18,11 +18,11 @@ class SessionsController < ApplicationController
       #else if false either enter a username or password
       # or correct user mistakes
     elsif params[:username].blank? && params[:password].blank?
-      flash[:alert] = "Please enter an Username and Password"
+      flash[:alert] = "Username and Password must not be blank"
       render 'new'
     # catch all errors
     else
-      flash[:notice] = "Incorrect Username and Password"
+      flash[:alert] = "Invalid Username and Password"
       render 'new'
     end
   end
