@@ -13,6 +13,14 @@
  *= require_self
  *= require_tree .
  */
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import 'main'
+@import 'main';
+
+@font-face {
+  font-family: "Actonia";
+  src: font-url('/assets/Actonia.ttf');
+  src: asset-url('/assets/Actonia.ttf');
+ font-weight: normal;
+}
