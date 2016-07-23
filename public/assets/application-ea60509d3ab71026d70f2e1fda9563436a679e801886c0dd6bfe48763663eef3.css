@@ -8760,27 +8760,29 @@ button.close {
 }
 @font-face {
   font-family: "Actonia";
-  src: url(/assets/Actonia);
+  src: url(/assets/Actonia.ttf);
+  src: url(/assets/Actonia.ttf);
+  font-weight: normal;
 }
-/* line 6, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
+/* line 22, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
 h1 {
   font-family: 'Actonia', sans-serif;
   font-size: 72px;
 }
 
-/* line 10, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
+/* line 26, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
 p, label {
   color: white;
 }
 
-/* line 14, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
+/* line 30, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
 html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
 }
 
-/* line 20, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
+/* line 36, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
 body {
   background: -moz-gradient(to left, #E6DADA, #274046);
   background: -webkit-linear-gradient(to left, #E6DADA, #274046);
@@ -9013,27 +9015,29 @@ body {
 }
 @font-face {
   font-family: "Actonia";
-  src: url(/assets/Actonia);
+  src: url(/assets/Actonia.ttf);
+  src: url(/assets/Actonia.ttf);
+  font-weight: normal;
 }
-/* line 6, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
+/* line 22, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
 h1 {
   font-family: 'Actonia', sans-serif;
   font-size: 72px;
 }
 
-/* line 10, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
+/* line 26, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
 p, label {
   color: white;
 }
 
-/* line 14, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
+/* line 30, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
 html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
 }
 
-/* line 20, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
+/* line 36, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
 body {
   background: -moz-gradient(to left, #E6DADA, #274046);
   background: -webkit-linear-gradient(to left, #E6DADA, #274046);
@@ -9416,27 +9420,29 @@ body {
 }
 @font-face {
   font-family: "Actonia";
-  src: url(/assets/Actonia);
+  src: url(/assets/Actonia.ttf);
+  src: url(/assets/Actonia.ttf);
+  font-weight: normal;
 }
-/* line 6, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
+/* line 22, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
 h1 {
   font-family: 'Actonia', sans-serif;
   font-size: 72px;
 }
 
-/* line 10, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
+/* line 26, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
 p, label {
   color: white;
 }
 
-/* line 14, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
+/* line 30, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
 html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
 }
 
-/* line 20, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
+/* line 36, /Users/Patrick/Desktop/Ruby-on-rails/Trollr/Trollr/app/assets/stylesheets/scss-files/_global.scss */
 body {
   background: -moz-gradient(to left, #E6DADA, #274046);
   background: -webkit-linear-gradient(to left, #E6DADA, #274046);

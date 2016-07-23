@@ -1,7 +1,11 @@
 @font-face {
   font-family: "Actonia";
-  src: font-url('/assets/Actonia');
+  src: font-url('/assets/Actonia.ttf');
   src: asset-url('/assets/Actonia.ttf');
+
+ //  src: <%= font_url('MavenProLight-300.otf') %>; // ADD THE TAGS
+ // src: <%= font_url('MavenProLight-300.otf') %>; // ADD THE TAGS
+ font-weight: normal;
 }
 
 // font-face {
