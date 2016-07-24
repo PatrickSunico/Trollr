@@ -18,3 +18,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import 'main';
+
+
+@font-face {
+  font-family: "Actonia";
+  // src: font-url('/assets/Actonia.ttf');
+  src: asset-url('Actonia.ttf');
+ font-weight: normal;
+}

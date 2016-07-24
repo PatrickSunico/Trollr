@@ -6,7 +6,7 @@ module ApplicationHelper
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
   end
 
-  def flash_alerts()
+  def flash_alerts
     render(:partial => "application/error_messages")
   end
 end
